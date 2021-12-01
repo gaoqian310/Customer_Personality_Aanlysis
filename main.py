@@ -116,7 +116,7 @@ plt.show()
 sns.displot(x="Education",y="Kidhome",data=data)
 
 
-# ## What's the relation between education level and response to the campaign?
+# ## Question 5: What's the relation between education level and response to the campaign?
 
 # In[28]:
 
@@ -125,7 +125,7 @@ sns.displot(x="Education",y="Kidhome",data=data)
 sns.displot(x="Education",y="Response",data=data)
 
 
-# ## What's the corrolation we can discover from the heatmaps?
+# ## Question 6: What's the corrolation we can discover from the heatmaps?
 
 # In[9]:
 
