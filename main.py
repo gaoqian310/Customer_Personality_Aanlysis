@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[2]:
 
 
 import numpy as np
@@ -14,13 +14,13 @@ df = pd.DataFrame(data)
 df.head()
 
 
-# In[6]:
+# In[3]:
 
 
 df.info()
 
 
-# In[7]:
+# In[4]:
 
 
 import matplotlib.pyplot as plt
@@ -30,14 +30,14 @@ avg_age = sum(list(df['Present Age']))/len(df['Present Age'])
 print(avg_age)
 
 
-# In[8]:
+# In[21]:
 
 
-sns.set(rc={'figure.figsize':(25,15)})
-sns.countplot(x = df['Present Age'],data=df)
+sns.set(rc={'figure.figsize':(25,20)})
+sns.countplot(x = df['Present Age'],data = df,palette = ['#338999'])
 
 
-# In[9]:
+# In[6]:
 
 
 df['TotalPurchaseThroughCampaign'] = df['AcceptedCmp1'] + df['AcceptedCmp2'] + df['AcceptedCmp3'] + df['AcceptedCmp4']  + df['AcceptedCmp5'] + df['Response']
@@ -45,7 +45,7 @@ df['TotalPurchaseThroughCampaign'].head()
 sns.heatmap(data = df[['AcceptedCmp1','AcceptedCmp2','AcceptedCmp3','AcceptedCmp4','AcceptedCmp5','Response','TotalPurchaseThroughCampaign']].corr(),annot = True)
 
 
-# In[10]:
+# In[7]:
 
 
 #calculating percentage of purchases through each campaign
@@ -86,7 +86,7 @@ for i in df['Response']:
 print((count/2240)*100) 
 
 
-# In[11]:
+# In[8]:
 
 
 plt.figure(figsize=(10,7))
@@ -102,7 +102,7 @@ sns.displot(x="Education",y="Kidhome",data=data)
 sns.displot(x="Education",y="Response",data=data)
 
 
-# In[12]:
+# In[9]:
 
 
 #heatmap
