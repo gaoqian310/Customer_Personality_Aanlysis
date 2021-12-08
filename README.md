@@ -2,7 +2,7 @@
 
 A data base found on [kaggle](https://www.kaggle.com/imakash3011/customer-personality-analysis) contains shopping habits, background knowledge of customers of a company.
 
-The project of this analysis is to data mining and discovery finds.
+The python project of this analysis is to data mining and discovery finds through different models.
 
 
 
